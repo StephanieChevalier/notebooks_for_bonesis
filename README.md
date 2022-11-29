@@ -6,4 +6,4 @@ In the "tutorials" folder, notebooks to share to general steps of:
 * **the observations preprocessing**
 
 In the "applications/hematopoiesis" folder:
-* the notebook used **for getting the logic program given to clingo for the component selection** for our hematopoiesis application
+* `A_components-selection`: the notebook used **for getting the logic program given to clingo for the component selection** for our hematopoiesis application
