@@ -1,7 +1,7 @@
 # notebooks_for_bonesis
 temporary folder for sharing notebooks to guide the use of bonesis
 
-In the "tutorials" folder, notebooks to share to general steps of:
+In the "tutorials" folder, notebooks for helping the the general steps of:
 * **the prior knowledge network preprocessing**
 * **the observations preprocessing**
 
