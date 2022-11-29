@@ -1,0 +1,5 @@
+    	gene1	gene2	gene3	stimulus1	phenotype1	phenotype2
+obs1	1	0	0	0	0	0
+obs2	1	0	1	1	0	0
+obs3	1	NA	1	0	1	0
+obs4	0	1	1	0	0	1
