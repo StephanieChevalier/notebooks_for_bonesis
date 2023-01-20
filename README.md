@@ -1,13 +1,13 @@
 # notebooks_for_bonesis
 temporary folder for sharing notebooks to guide the use of bonesis
 
-In the "tutorials" folder, notebooks for helping the the general steps of:
-* **the prior knowledge network preprocessing**
-* **the observations preprocessing**
+#### In *applications/hematopoiesis* folder:
+* [component_selection](https://github.com/StephanieChevalier/notebooks_for_bonesis/blob/main/applications/hematopoiesis/component_selection.ipynb): first step of the hematopoiesis application.
+* [ensemble_analysis_interactiongraph](https://github.com/StephanieChevalier/notebooks_for_bonesis/blob/main/applications/hematopoiesis/ensemble_analysis_interactiongraph.ipynb): Creation of a graph summarizing the diversity of the ensemble of models.
+* [ensemble_analysis_clusters](https://github.com/StephanieChevalier/notebooks_for_bonesis/blob/main/applications/hematopoiesis/ensemble_analysis_clusters.ipynb): Highlighting of clusters of models according to their similarity. Features of the clusters.
 
-In the "applications/hematopoiesis" folder:
-* `A_components-selection`: notebook **for getting the logic program given to clingo for the component selection** for our hematopoiesis application
-* `ensemble_analysis_interactiongraph`: Creation of a graph summarizing the diversity of the ensemble of models.
-* `ensemble_analysis_clusters`: Among the ensemble of models, do the models fall into several groups based on their similarity? What are the features of the highlighted clusters?
+#### In *tutorials* folder, notebooks for helping the general steps of:
+* [the prior knowledge network preprocessing](https://github.com/StephanieChevalier/notebooks_for_bonesis/blob/main/tutorials/Tutorial%20for%20interaction%20graph%20preprocessing.ipynb)
+* [the observations preprocessing](https://github.com/StephanieChevalier/notebooks_for_bonesis/blob/main/tutorials/Tutorial%20for%20observations%20preprocessing.ipynb)
 
 ![bonesis](bonesis.png)
