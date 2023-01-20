@@ -7,7 +7,3 @@ In the "tutorials" folder, notebooks for helping the the general steps of:
 
 In the "applications/hematopoiesis" folder:
 * `A_components-selection`: the notebook used **for getting the logic program given to clingo for the component selection** for our hematopoiesis application
-
-![bonesis](bonesis_principle.png)
-
---
