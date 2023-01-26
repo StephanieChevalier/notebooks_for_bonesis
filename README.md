@@ -7,7 +7,7 @@ temporary folder for sharing notebooks to guide the use of bonesis
 * [component_selection_analysis](https://github.com/StephanieChevalier/notebooks_for_bonesis/blob/main/applications/hematopoiesis/component_selection_analysis.ipynb):  
 **Comparison** of the component selection via BoNesis **with 3 state-of-the-art models.**
 * [ensemble_analysis_interactiongraph](https://github.com/StephanieChevalier/notebooks_for_bonesis/blob/main/applications/hematopoiesis/ensemble_analysis_interactiongraph.ipynb):  
-Creation of an **interaction graph summarizing the diversity** of the ensemble of models.
+**Creation of an interaction graph summarizing the diversity** of the ensemble of models.
 * [ensemble_analysis_clusters](https://github.com/StephanieChevalier/notebooks_for_bonesis/blob/main/applications/hematopoiesis/ensemble_analysis_clusters.ipynb):  
 **Model clustering** according to their similarity. Features of the clusters.
 
