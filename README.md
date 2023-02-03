@@ -12,7 +12,7 @@ temporary folder for sharing notebooks to guide the use of bonesis
 **Model clustering** according to their similarity. Features of the clusters.
 
 #### In *tutorials* folder, notebooks for helping the general steps of:
-* [the prior knowledge network preprocessing](https://github.com/StephanieChevalier/notebooks_for_bonesis/blob/main/tutorials/Tutorial%20for%20interaction%20graph%20preprocessing.ipynb)
-* [the observations preprocessing](https://github.com/StephanieChevalier/notebooks_for_bonesis/blob/main/tutorials/Tutorial%20for%20observations%20preprocessing.ipynb)
+* [the prior knowledge network preprocessing](https://github.com/StephanieChevalier/notebooks_for_bonesis/blob/main/tutorials/Tutorial_for_interaction_graph_preprocessing.ipynb)
+* [the observations preprocessing](https://github.com/StephanieChevalier/notebooks_for_bonesis/blob/main/tutorials/Tutorial_for_observations_preprocessing.ipynb)
 
 ![bonesis](bonesis.png)
