@@ -6,7 +6,7 @@ from typing import List, Set, Dict, Tuple
 
 def synonyms_from_NCBI(path_NCBIgeneinfo: str) -> Dict:
     """
-    Create a dictionary matching each possible gene name to its NCBI symbol.
+    Create a dictionary matching each gene name to its NCBI reference gene name.
     
     Method:
     For speeding up the task facing a large matrix from NCBI, the parsing of the NCBI gene data is run with awk.
@@ -26,27 +26,25 @@ def synonyms_from_NCBI(path_NCBIgeneinfo: str) -> Dict:
     
     # Extract gene information:    
     gene_synonyms_dict = dict()
-    symbols = set()
+    reference_names = set()
 
     with open (path_NCBIgeneinfo_cut, "r") as file_synonyms:
         for gene in file_synonyms:
             gene = gene.strip().upper()
-            gene_symbols_list = gene.split("\t")
-            #extract reference gene symbol:
-            ncbi_symbol = gene_symbols_list.pop(0)
+            gene_synonyms_list = gene.split("\t")
+            #extract reference gene name:
+            ncbi_reference_name = gene_synonyms_list.pop(0)
             #delete non-informative synonyms:
-            res = [syn for syn in gene_symbols_list if (syn != "-" and syn != ncbi_symbol)]
+            res = [syn for syn in gene_synonyms_list if (syn != "-" and syn != ncbi_reference_name)]
 
-            #create the dictionnary matching each symbol to its reference gene symbol:
-            gene_synonyms_dict[ncbi_symbol] = ncbi_symbol
-            symbols.add(ncbi_symbol)
+            #create the dictionnary matching each gene name to its reference gene name:
+            gene_synonyms_dict[ncbi_reference_name] = ncbi_reference_name
+            reference_names.add(ncbi_reference_name)
 
             for gene in res:
-                if gene not in symbols:
-                    # Warning with NCBI list of synonyms:
-                    # A noun can be the synonym of several symbols.
-                    # Arbitrary, the choosen one is the first.
-                    gene_synonyms_dict[gene] = ncbi_symbol
+                if gene not in reference_names \
+                and gene not in gene_synonyms_dict: # Warning with NCBI list of synonyms: a noun can be the synonym of several reference names. Arbitrary, the choosen one is the first.
+                    gene_synonyms_dict[gene] = ncbi_reference_name
                     
     os.system(f"rm {path_NCBIgeneinfo_cut}")
     return gene_synonyms_dict
@@ -99,7 +97,8 @@ def interaction_list_standardization(interactions_list: List[Tuple[str, str, Dic
     return standardized_interactions_list
 
 
-from typing import List
+def set_standardization(gene_set: set, synonyms) -> set:
+    return {reference_gene_name(gene, synonyms) for gene in gene_set}
 
 
 def file_standardization(path_input: str, path_NCBIgeneinfo: str, columns_to_standardize: List or Set[str] = [0], sep = "\t"):
