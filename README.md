@@ -7,7 +7,7 @@ temporary folder for sharing notebooks to guide the use of bonesis
 
 #### In *applications/hematopoiesis* folder:
 * [component_selection](https://github.com/StephanieChevalier/notebooks_for_bonesis/blob/main/applications/hematopoiesis/component_selection.ipynb):  
-**First step of the hematopoiesis application.**
+**Use of BoNesis for selection of components.**
 * [component_selection_analysis](https://github.com/StephanieChevalier/notebooks_for_bonesis/blob/main/applications/hematopoiesis/component_selection_analysis.ipynb):  
 **Comparison** of the component selection **with 3 state-of-the-art models.**  
 Creation of **the subgraph made of the selected components.**  
